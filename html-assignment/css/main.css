@@ -1,0 +1,40 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #ce5a67;
+    background-color: #fcf5ed;
+}
+header,footer p {
+    background-color: #f4bf96;
+}
+/* add a reuseble class */
+.site-title {
+    color: #43291F;
+}
+h2, h3{
+    color: #ce5a67;
+}
+.intro,.hobbies {
+    color: #543C33;
+}
+.hobbies-list {
+    list-style-type: square;
+}
+.hobbies-list li:nth-child(odd) {
+    background: #E1BFB7;
+}
+/* adds an unique id */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+.nav-link {
+    list-style-type: none;
+    background: #E8E8E8;
+    border: 4px dotted #525252;
+}
+.nav-link a {
+    text-decoration: none;
+}
+.nav-link a:hover {
+    background: #C9B0A6;
+}
