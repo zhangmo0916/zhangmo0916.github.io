@@ -1,0 +1,157 @@
+body {
+    background-color: #71695b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #c6c1b8;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    position: relative;
+    color: white;
+    top: 250px;
+    z-index: 1;
+}
+
+.gs-jpg {
+    position: relative;
+    height: auto;
+    background-color: #291d27;
+}
+
+nav {
+    position: relative;
+    background: rgba(198, 193, 184, 0.7);
+    padding: 5px;
+    z-index: 1;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 300px;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 5px;
+    border-right: 1px solid;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px;
+}
+
+article {
+    width: 950px;
+}
+
+p {
+    /* add space between each lines */
+    line-height: 40px;
+    /* add space between image and paragraph */
+    margin: 10px;
+}
+
+/* set width and border of image */
+.box1 {
+    width: 250px;
+    height: 340px;
+    padding: 10px;
+    margin: 3px;
+    float: left;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.dogtime {
+    padding-left: 25px;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.facts {
+    clear: both;
+}
+
+h4 {
+    margin: 10px;
+}
+
+.contact {
+    padding: 5px 20px 10px 15px ;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.form-name {
+    margin-bottom: 15px;
+}
+
+.form-name label {
+    display: block;
+}
+
+.form-name input {
+    width :100%;
+}
+
+.form-email {
+    margin-bottom: 15px;
+}
+
+.form-email label {
+    display: block;
+}
+
+.form-email input {
+    width: 100%;
+}
+
+.form-message {
+    margin-bottom: 15px;
+}
+
+.form-message label {
+    display: block;
+}
+
+.form-message input {
+    width: 100%;
+}
+
+.form-message textarea {
+    height: 100px;
+}
+
+.send-but {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right:0;
+    padding: 10px;
+    color: black;
+}
