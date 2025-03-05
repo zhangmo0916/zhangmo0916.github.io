@@ -1,8 +1,10 @@
+/* set the basic format of the entire website */
 body {
     background-color: #71695b;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* set the layout of the function area */
 .background {
     width: 1000px;
     margin: 0 auto;
@@ -10,51 +12,57 @@ body {
 }
 
 header {
-    text-align: center;
-    position: relative;
-}
-
-h1 {
-    position: relative;
-    color: white;
-    top: 250px;
-    z-index: 1;
-}
-
-.gs-jpg {
-    position: relative;
-    height: auto;
+    text-align: center; /* adjust text to the center position */
+    position: relative; /* move other elements relative to original header */
+    color: white; /* change the header's content color */
+    background-image: url(../images/german-shepherd.jpg); /* add image on the header */
+    background-size: 20%; /* fit the image size to the header */
+    background-repeat: no-repeat; /* set the image on the header without repeating*/
+    background-position: center; /* set the image on the center of website */
+    height: 200px;
     background-color: #291d27;
 }
 
-nav {
-    position: relative;
-    background: rgba(198, 193, 184, 0.7);
-    padding: 5px;
-    z-index: 1;
+/* set the h1 at the bottom of the image */
+h1 {
+    padding: 150px;
 }
 
+nav {
+    position: relative; /* set the navigation position relative to the header */
+    background: rgba(198, 193, 184, 0.7);
+    padding: 10px; /* add space between h1 and h2 */
+    z-index: 1; /* set navigation on the top of other elements */
+}
+
+/* set the navigation bar on the center of the website */
 nav ul {
-    text-align: center;
+    text-align: center; 
 }
 
 nav li {
-    display: inline-block;
-    width: 300px;
+    display: inline-block; /* set the navigation elements horizontal */
+    width: 300px; /* add space between home/story/contact */
+    border-right: 1px solid; /* set the border box for each of nav link */
 }
+
+/* remove the right "|" element of contact */
+nav li:last-child {
+    border-right: none;
+}
+
 nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    padding: 5px;
-    border-right: 1px solid;
-    text-align: center;
+    text-decoration: none; /* remove underline from the link */
+    text-transform: uppercase; /* transform link text to the uppercase */
+    color: black; /* adjust font color */
 }
 
+/* add the space between h2 and its left border*/
 h2 {
-    margin: 10px;
+    margin-left: 10px;
 }
 
+/* fit the article with border */
 article {
     width: 950px;
 }
@@ -72,41 +80,43 @@ p {
     height: 340px;
     padding: 10px;
     margin: 3px;
-    float: left;
+    float: left; /* set the image on the left side of the article */
 }
 
+/* add space between h3 and article */
 h3 {
-    margin: 10px;
+    padding: 20px 10px; 
 }
 
+/* add space between h3 and content */
 .dogtime {
     padding-left: 25px;
     line-height: 40px;
 }
 
-h5 {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
+/* clear float to reset the layout */
 .facts {
     clear: both;
 }
 
+/* add space around h4 */
 h4 {
     margin: 10px;
 }
 
+/* set the space and border for the contact part */
 .contact {
     padding: 5px 20px 10px 15px ;
     border: 1px solid black;
     margin: 10px;
 }
 
+/* add space between name and email */
 .form-name {
     margin-bottom: 15px;
 }
 
+/* element in a seperate line */
 .form-name label {
     display: block;
 }
@@ -140,7 +150,8 @@ h4 {
 }
 
 .form-message textarea {
-    height: 100px;
+    resize: none; /* disable adjust the border */
+    border: 1px solid;
 }
 
 .send-but {
@@ -149,9 +160,10 @@ h4 {
 }
 
 footer {
-    position: fixed;
+    position: relative; 
     bottom: 0;
     right:0;
-    padding: 10px;
+    padding: 25px;
+    margin-left: 800px;
     color: black;
 }
