@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZHANGMO0916 final project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZHANGMO0916 final project</title>
 
-    <script src="https://kit.fontawesome.com/fed379a6c0.js" crossorigin="anonymous"></script>
+<!-- open sans font from google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
+<!-- triangle icon for clicking from fontawesome -->
+<script src="https://kit.fontawesome.com/fed379a6c0.js" crossorigin="anonymous"></script>
+
+<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <!-- basic container including all sections of the website-->
+    <div class="wrapper"> 
         <header>
+        <!-- navigation bar and "welcome page" -->
             <div class="nav-bg">
                 <div class="nav">
-                    <img src="images/logo.png" alt="logo image">
+                    <div class="nav-logo">
+                        <img src="images/logo.png" alt="logo image">
+                    </div>
                     <nav>
                         <ul>
                             <li><a href="#">Home</a></li>
@@ -23,20 +33,23 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-                    <input id="search" type="text" placeholder="Search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <!-- search icon and search bar inside of navigation -->
+                    <div class="search-area">
+                        <input id="search" type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="main-image">
-                <img src="images/main-banner.jpg" alt="main-img">
-            </div>
-            <div class="main-bg">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad doloremque, hic eligendi cupiditate debitis sapiente non ea consequatur aliquid officiis culpa at quo eveniet distinctio iure adipisci perspiciatis placeat!</p>
-                <a href="#">Connect with us</a>
-                <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+            <!-- Homepage including article and link-->
+            <div class="main-body">
+                <div class="main-bg">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad doloremque, hic eligendi cupiditate debitis sapiente non ea consequatur aliquid officiis culpa at quo eveniet distinctio iure adipisci perspiciatis placeat!</p>
+                    <a href="#" class="cwu">Connect with us<i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></a>
+                </div>
             </div>
         </header>
+        <!-- about us section including image/heading/paragraph -->
         <div class="body-content">
             <section class="about-bg">
                 <div class="about-body">
@@ -46,19 +59,22 @@
                     <div class="about-content">
                         <h2 class="about-hd">About Us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est esse ut veniam ea aperiam deleniti voluptas tempora ad expedita sint, architecto, maxime illo cum mollitia ducimus veritatis cumque repellat perspiciatis!</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis rerum corrupti non, est aut esse ipsum, quod nisi magnam quibusdam veniam! Praesentium nemo eaque quae cumque, soluta repellendus tempore.</p>
                     </div>
                 </div>
             </section>
+            <!-- our service section -->
             <section class="service-body">
                 <h2 class="service-hd">Our Services</h2>
+                    <!-- service boxes including images/paragraphs/links -->
                     <div class="digital-box">
                         <div class="digital-image">
                             <img src="images/digital.jpg" alt="digital-img">
                         </div>
-                        <h3 class="digital-head">Digital Tramsformation</h3>
+                        <h3 class="digital-head">Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem doloribus provident recusandae, perspiciatis officia illo neque quam cum vero harum laudantium minima obcaecati quos tempore corporis? Libero ratione ad corrupti.</p>
-                        <a href="#">Digital Plans</a>
-                        <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+                        <a href="#" class="dp">Digital Plans<i class="fa-sharp fa-solid fa-play" style="color: white;"></i></a>
                     </div>
                     <div class="mkt-box">
                         <div class="marketing-image">
@@ -66,8 +82,7 @@
                         </div>
                         <h3 class="mkt-head">Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam adipisci laborum itaque praesentium dicta provident odit aspernatur natus perferendis, possimus optio. Quia porro labore sequi fugiat ex, voluptates commodi. Delectus.</p>
-                        <a href="#">Marketing Plans</a>
-                        <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+                        <a href="#" class="mp">Marketing Plans<i class="fa-sharp fa-solid fa-play" style="color: white;"></i></a>
                     </div>
                     <div class="video-box">
                         <div class="video-image">
@@ -75,17 +90,15 @@
                         </div>
                         <h3 class="video-head">Video Production</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores officiis qui labore beatae a et magnam explicabo excepturi amet? Repellat ex animi soluta necessitatibus nam enim minima doloremque doloribus debitis!</p>
-                        <a href="#">Video Plans</a>
-                        <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+                        <a href="#" class="vp">Video Plans<i class="fa-sharp fa-solid fa-play" style="color: white;"></i></a>
                     </div>
                     <div class="web-box">
-                        <div class="web-images">
+                        <div class="web-image">
                             <img src="images/web.jpg" alt="web-img">
                         </div>
                         <h3 class="web-head">Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam qui unde doloremque quis non id, obcaecati cupiditate repellat. Aspernatur perspiciatis labore voluptatum nobis voluptatem accusantium harum, facere quas? Temporibus, vitae.</p>
-                        <a href="#">Web Plans</a>
-                        <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+                        <a href="#" class="wp">Web Plans<i class="fa-sharp fa-solid fa-play" style="color: white;"></i></a>
                     </div>
                     <div class="print-box">
                         <div class="print-image">
@@ -93,24 +106,23 @@
                         </div>
                         <h3 class="print-head">Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus maiores natus dolorum sapiente? Similique maxime porro quos cum fugiat eveniet consequatur rem, laborum consequuntur, inventore veniam totam tempore atque.</p>
-                        <a href="#">Print Plans</a>
-                        <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+                        <a href="#" class="pp">Print Plans<i class="fa-sharp fa-solid fa-play" style="color: white;"></i></a>
                     </div>
             </section>
+            <!-- our vision section including heading/paragraphs/link -->
             <section class="vision">
-                <div class="vision-image">
-                    <img src="images/vision.jpg" alt="vision-img">
-                </div>
                 <div class="vision-content">
                     <h2 class="vision-header">Our Vision</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt facere sit quo error, nihil itaque ad doloribus incidunt libero. Sit, neque incidunt laudantium at voluptate reiciendis enim rerum consequatur ipsam?</p>
-                    <a href="#">Learn More</a>
-                    <button type="submit"><i class="fa-sharp fa-solid fa-play" style="color: #000000;"></i></button>
+                    <!-- edit learn more button style -->
+                    <a href="#" class="lm">Learn More<i class="fa-sharp fa-solid fa-play" style="color: white;"></i></a>
                 </div>
             </section>
+            <!-- our team layout in column -->
             <section class="team">
                 <div class="team-body">
                     <h2 class="team-header">Our Team</h2>
+                    <!-- john doe info including image/name/position/ -->
                     <div class="team-1">
                         <div class="john-image">
                             <img src="images/john.jpg" alt="john-img">
@@ -122,6 +134,7 @@
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam provident quia nobis sit deleniti. Odit optio eveniet fugit incidunt hic consequuntur quam earum quas ipsa. A nisi quo quod?</p>
                         </div>
                     </div>
+                    <!-- bob rite info including image/name/position/ -->
                     <div class="team-2">
                         <div class="bob-intro">
                             <h3 class="bob">Bob Rite</h3>
@@ -135,20 +148,27 @@
                     </div>
                 </div>
             </section>
+            <!-- contact us container -->
             <section class="contact-body">
+                <!-- contact us body -->
                 <div class="contact-content">
                     <h2 class="contact-head">Contact Us</h2>
+                    <!-- send us a message elements -->
                     <div class="send">
-                        <h3 class="send">Send us a message</h3>
-                        <form>
+                        <h3 class="send-head">Send us a message</h3>
+                        <!-- form that input message -->
+                        <form action="index.html" method="get">
+                            <!-- full name area -->
                             <div class="name">
                                 <label for="fullname">Full Name</label>
                                 <input id="fullname" type="text" name="fullname">
                             </div>
+                            <!-- email area -->
                             <div class="email">
                                 <label for="email">Email</label>
                                 <input id="email" type="text" name="email">
                             </div>
+                            <!-- email area -->
                             <div class="message">
                                 <label for="message">Message</label>
                                 <textarea id="message"></textarea>
@@ -158,12 +178,14 @@
                             </div>
                         </form>
                     </div>
+                    <!-- location area including map and its head -->
                     <div class="location">
                         <h3 class="location-head">Location</h3>
                         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.798544543675!2d-75.76563322858607!3d45.34982891716407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1743567234544!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                    <!-- hours of operation table -->
                     <div class="hours">
-                        <h3 class="hourd-head">Hours of operation</h3>
+                        <h3 class="hour-head">Hours of operation</h3>
                         <table>
                             <thead>
                                 <tr>
@@ -185,11 +207,11 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <div class="footer">
-            <div class="footer-content">
-                <footer>&copy; Copyright Three Star Media, 2020</footer>
-                <p>All images are taken from Unsplash</p>
+            </div>
+            <div class="footer">
+                <div class="footer-content">
+                    <footer>&copy; Copyright Three Star Media, 2020</footer>
+                    <p>All images are taken from <u>Unsplash</u></p>
             </div>
         </div>
     </div>

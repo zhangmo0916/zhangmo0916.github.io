@@ -1,0 +1,751 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mobile-first below */
+
+/* define basic format */
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* define layout structure and size of the container  */
+.wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* adjust navigation basic format and its box size */
+.nav {
+    max-width: 1200px;
+}
+
+.nav-bg {
+    background-color: #222;
+    padding: 30px;
+}
+
+.nav-logo {
+    background-color: #c78c06;
+    padding: 20px;
+}
+
+.nav img {
+    width: 100px;
+    display: block;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: #c78c06;
+    text-decoration: none;
+    padding: 25px;
+    margin: 0 auto;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.nav input {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+}
+
+.nav button {
+    border: 1px solid #c78c06;
+    background-color: #222;
+    color: #c78c06;
+    padding: 10px 10px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* add background image and define layout structure */
+.main-body {
+    position: relative;
+    max-width: 1200px;
+    height: auto;
+    min-height: 600px;
+    margin: 0 auto;
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+/* add transparent background and define basic format of content inside of welcome area */
+.main-bg {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.main-bg p {
+    line-height: 1.5;
+    padding: 10px 15px;
+}
+
+.main-bg a {
+    background-color: #c78c06;
+    text-decoration: none;
+    color: #222;
+    margin-left: 15px;
+}
+
+.main-bg a.cwu {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 35px;
+}
+
+/* define layout structure of about us area */
+.body-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.about-image {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 15px 15px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.about-content {
+    padding: 20px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.about-hd {
+    font-weight: bold;
+    font-size: 40px;
+    margin:0;
+    padding-bottom: 15px;
+}
+
+/* define basic layout structure of our services area */
+.service-body {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px 40px 15px;
+}
+
+.service-hd {
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.digital-box, .mkt-box, .video-box, .web-box, .print-box {
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.digital-image img, .marketing-image img, .video-image img, .web-image img, .print-image img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.digital-head, .mkt-head, .video-head, .web-head, .print-head {
+    font-weight: bold;
+    padding: 20px 15px 20px 15px;
+    font-size: 25px;
+}
+
+.digital-box p, .mkt-box p, .video-box p, .web-box p, .print-box p {
+    line-height: 1.5;
+    padding: 10px 15px 10px 15px;
+}
+
+.dp, .mp, .vp, .wp, .pp {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 35px;
+    width: 25%;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* add background image and define basic layout structure for our vision area */
+.vision {
+    position: relative;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.vision-content {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px 10px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.vision-content h2 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.vision-content p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+/* adjust learn more button */
+.lm {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 35px;
+    width: auto;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 20px;
+    border: 1px solid #c78c06;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* adjust size and layout stucture of our team area */
+.team-body {
+    max-width: 1200px;
+    margin: 10px;
+}
+
+.team-header {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.team-1, .team-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.john-image img, .bob-image img {
+    width: 100%;
+    display: block;
+}
+
+.john-intro, .bob-intro {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.john, .bob {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.ceo, .cfo {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.john-intro p, .bob-intro p{
+    line-height: 1.5;
+    padding: 20px 5px 20px 5px;
+}
+
+.john-intro hr, .bob-intro hr {
+    border: none;
+    border-top: 2px solid #c78c06;
+    width: 100%;
+    margin: 0 5px 0 5px;
+}
+
+.team-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* change order of bob's image and info */
+.bob-image {
+    order: 1;
+}
+
+.bob-intro {
+    order: 2;
+}
+
+/* define style and basic layout structure of contact us area */
+.contact-body {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.contact-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.contact-head {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 0 20px 0;
+}
+
+/* adjust box and strture size of send us a message area */
+.send {
+    max-width: 100%;
+    box-sizing: border-box;
+    order: 1;
+}
+
+.send-head, .location-head, .hour-head {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 0 20px 0;
+}
+
+.name label, .email label , .message label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.message textarea {
+    padding: 50px;
+}
+
+.send-button button {
+    color: #c78c06;
+    background-color: #222;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* adjust basic layout of hours of operation and location */
+.location, .hours {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   max-width: 1200px;
+}
+
+ /* change order of hours table and map area */
+.location {
+    order: 3;
+}
+
+.hours {
+    order: 2;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+table {
+    width:100%;
+}
+
+thead tr th {
+    background-color: #ffe6ac;
+    border: 1px solid #222;
+    padding: 15px;
+}
+
+tbody tr td {
+    border: 1px solid #222;
+    padding: 15px;
+}
+
+.footer {
+    color: #c78c06;
+    background-color: #222;
+    width: 100%;
+    padding: 15px;
+    line-height: 2.5;
+}
+
+.footer-content {
+    margin-left: 20px;
+} 
+
+/* desktop size below */
+
+@media screen and (min-width: 760px){
+    /* change nav bar direction from column to row */
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bg {
+        padding: 5px 50px 5px 50px;
+    }
+
+    .nav-logo {
+        background-color: initial; /* remove background color from logo image */
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 100px;
+    }
+
+    .nav a:hover {
+        padding: 25px;
+    }
+
+    .nav input {
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #search {
+        padding: 5px;
+        margin-left: 15px;
+    }
+
+    .nav button {
+        padding: 6px;
+        margin-left: 0;
+    }
+
+    /* add space wraps around content of welcome area */
+    .main-body {
+        position: relative;
+        width: 1200px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .main-bg {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        height: 500px;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+
+    /* change layout direction of about us from column to row */
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+    }
+
+    .about-body {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+    }
+
+    .about-image {
+        flex: 1;
+    }
+
+    .about-image img {
+        width: 90%;
+        height: 100%;
+        padding: 10px 0 10px 50px;
+    }
+
+    .about-content {
+        flex: 1;
+        padding: 25px 60px 20px 0;
+        line-height: 1.5;
+    }
+
+    .about-hd {
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    /* grid five boxes layout direction */
+    .service-body {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+        margin: 0 40px 0 40px;
+    }
+
+    .service-hd {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 20px;
+    }
+
+    .digital-image img, .marketing-image img, .video-image img, .web-image img, .print-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .digital-box {
+        grid-column: 1 / 4;
+        grid-row: 2 / 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .digital-box p, .mkt-box p {
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    .dp, .mp {
+        width: 85%;
+        margin: 0 auto 10px;
+    }
+
+    .mkt-box {
+        grid-column: 4 / 7;
+        grid-row: 2 / 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .video-box {
+        grid-column: 1 / 3;
+        grid-row: 4 / 6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-box p, .web-box p, .print-box p {
+        padding: 20px;
+    }
+
+    .vp {
+        padding: 30px;
+        width: 80%;
+        margin: 25px auto 10px;
+    }
+    
+    
+    .wp, .pp {
+        padding: 30px;
+        width: 80%;
+        margin: 0 auto 10px;
+    }
+
+    .web-box {
+        grid-column: 3 / 5;
+        grid-row: 4 / 6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .print-box {
+        grid-column: 5 / 7;
+        grid-row: 4 / 6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* change our team layout direction */
+    .team-1, .team-2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin-bottom: 0;
+        padding: 0 40px 0 40px;
+    }
+
+    .john-intro p, .bob-intro p {
+        line-height: 1.5;
+        padding: 5px;
+    }
+
+    .bob-image, .bob-intro {
+        order: initial;  /* reset order of bob's info and image */
+    }
+
+    /* adjust contact us layout */
+    .contact-body {
+        padding: 0 40px 0 40px;
+    }
+
+    /* grid contact us direction to row */
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        grid-template-rows: 100px 550px 210px;
+    }
+
+    .contact-head {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        padding: 20px 0 0 0;
+    }
+
+    .send, .location {
+        grid-column: 1 / 2;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .location {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        order: initial; /* reset location and hours table order */
+        padding: 20px 10px 20px 10px;
+        width: 100%;
+    }
+
+    .hours {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        padding-left: 0;
+    }
+}
